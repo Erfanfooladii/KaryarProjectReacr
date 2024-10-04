@@ -1,0 +1,79 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer .box{
+    width: 100%;
+    background-color: #232f3e;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 200px;
+    padding: 25px;
+}
+.footer .box ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 130px;
+    flex-wrap: wrap;
+}
+.footer .box h2{color: white;font-size: 14px;padding-bottom: 20px;}
+.footer .box a{color: #9b9b9b;font-size: 12px;}
+.footer .btn-scroll-mode{
+    width: 100%;
+    border: none;
+    background-color: #232f3ee6;
+    padding: 15px 0;
+    color: white;
+    cursor: pointer;
+}
+.footer .btn-scroll-mode:hover{
+    background-color: #232f3ecc;
+}
+.footer .box a:hover{
+    text-decoration: dashed;
+}
+
+.footer-box{
+    border-top: 1px solid #848484;
+    
+}
+.footer-box ul{
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+}
+.footer-box ul .item-box{
+    padding: 0 5px;
+    border: 1px solid #848484;
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    flex-direction: row;
+    gap: 4px;
+    display: flex;
+    min-width: 85px;
+    align-items: center;
+}
+.footer-box ul .item-box img {height: 20px;}
+/* start responsive */
+@media screen and (max-width: 900px) {
+    .footer{align-items: center;}
+    .footer .box{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer .item-footer{
+        width: 220px;
+        margin: auto;
+    }
+    .footer .footer-box ul{
+        margin: auto;
+        padding: 2px;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+}

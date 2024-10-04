@@ -1,0 +1,29 @@
+.container{
+    padding: 10px;
+}
+.list-full{
+    position: relative;
+    top: -120px;
+    z-index: 2;
+}
+.title-head{
+    background-color: #ffffff;
+    padding: 8px;
+    text-align: center;
+}
+.title-head a{
+    color: #007185;
+}
+.title-head a:hover{color: #ff8615;text-decoration: dashed;}
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+/* start Responsive */
+@media screen and (max-width: 950px){
+    .title-head{
+        font-size: 12px;
+    }
+}
