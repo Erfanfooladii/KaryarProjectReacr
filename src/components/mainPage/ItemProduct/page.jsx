@@ -4,7 +4,7 @@ import "./style.css"
 const ItemProduct=({item})=>{
     return(
         <div className="item-product" key={item.id}>
-            <Link to={item.id}>
+            <Link to={item.id} className="link-image" >
                 <img src={`${item.image_link}`} alt={`image ${item.name}`} />
             </Link>
             <h2>{item.name}</h2>

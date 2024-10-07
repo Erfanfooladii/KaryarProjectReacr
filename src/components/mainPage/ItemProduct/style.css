@@ -30,6 +30,7 @@
 }
 .item-product p{
     font-weight: 100;
+    letter-spacing: 1px;
 }
 .item-product a{
     color: black;
@@ -38,10 +39,14 @@
     color: #ff8615;
     transform: scaleY(22px);
 }
-.item-product img{
+.item-product .link-image{
+    aspect-ratio: 1/1;
+    max-height: 300px;
+    position: relative;
+    padding: 60px;
+}
+.item-product .link-image img{
     width: 100%;
-    height: 100%;
-    aspect-ratio: 1 /1;
     object-fit: cover;
 }
 .item-product .last-link{
