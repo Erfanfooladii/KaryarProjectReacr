@@ -44,9 +44,11 @@
     max-height: 300px;
     position: relative;
     padding: 60px;
+    display: flex;
+    justify-content: center;
 }
 .item-product .link-image img{
-    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .item-product .last-link{
