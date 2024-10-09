@@ -20,7 +20,7 @@ const NavBar = () => {
           </Link>
         </div>
         <div className="item location">
-          <span class="material-symbols-outlined">location_on</span>
+          <span className="material-symbols-outlined">location_on</span>
           <div>
             <small>Deliver to</small>
             <p>iran</p>
@@ -65,7 +65,7 @@ const NavBar = () => {
       <header className="header">
         <ul>
           <li>
-            <span class="material-symbols-outlined">menu</span>
+            <span className="material-symbols-outlined">menu</span>
             All
           </li>
           <li>Today's Deals</li>
