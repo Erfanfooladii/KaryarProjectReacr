@@ -9,7 +9,6 @@ const CartList = ({
   handeleChangeSelect,
   btnHandler
 }) => {
-  console.log('list cart',item);
   
   return (
     <li>
