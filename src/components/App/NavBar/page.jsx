@@ -4,13 +4,18 @@ import icon from "../../../assets/images/navbarImg.png";
 import flag from "../../../assets/images/flag.png";
 import icon_cart from "../../../assets/images/basket.png";
 import { Link } from "react-router-dom";
+import Menu from "../Menu/page";
+import { useState } from "react";
 const NavBar = () => {
   const dataCart = useCartData((state) => state.cartData);
   const totalQuantity = dataCart.reduce(
     (accumulator, currentValue) => accumulator + parseInt(currentValue.value),
     0
   );
-
+  const [isOpen,setIsOpen]=useState(false)
+  const handeleMenu=()=>{
+    setIsOpen(!isOpen)
+  }
   return (
     <>
       <nav className="nav-bar">
@@ -26,7 +31,7 @@ const NavBar = () => {
             <p>iran</p>
           </div>
         </div>
-        <div className="">
+        <div>
           <div className="search">
             <select>
               <option value="all">All</option>
@@ -64,7 +69,7 @@ const NavBar = () => {
       </nav>
       <header className="header">
         <ul>
-          <li>
+          <li onClick={handeleMenu}>
             <span className="material-symbols-outlined">menu</span>
             All
           </li>
@@ -75,6 +80,7 @@ const NavBar = () => {
           <li>Sell</li>
         </ul>
       </header>
+      <Menu openHaneler={()=>setIsOpen(!isOpen)} open={isOpen}/>
     </>
   );
 };

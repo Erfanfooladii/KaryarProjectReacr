@@ -1,0 +1,27 @@
+.item-music{
+    height: 100vh;
+}
+.item-music .head-title-music{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(157, 187, 185);
+}
+.item-music .head-title-music:hover{
+    background-color: aliceblue;
+}
+.item-music ul h2{
+    padding: 15px;
+}
+.item-music ul li{
+    padding: 15px;
+}
+.item-music ul li:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+/* start responsive */
+@media screen and (max-width: 900px){}

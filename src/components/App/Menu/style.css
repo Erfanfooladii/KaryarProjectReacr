@@ -1,0 +1,84 @@
+.full-page{
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000082;
+    opacity: 0.3;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+.menu-full{
+    background-color: #fff;
+    width: 320px;
+    max-height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+.menu-full .container-menu{
+    overflow-y: scroll;
+    height: 100vh;
+    padding-bottom: 50px;
+}
+.menu-full .head-menu{
+    width: 100%;
+    padding: 15px;
+    background-color: #232f3e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.menu-full .head-menu h2{
+    font-size: 17px;
+}
+.menu-full .item-menu{
+    border-bottom: 1px solid rgb(185, 201, 204);
+}
+.menu-full .item-menu li{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.menu-full .item-menu li:hover{background-color: aliceblue;}
+.menu-full .item-menu li p{font-size: 13px;letter-spacing: 0.5px;}
+.menu-full .item-menu .head-item{
+    padding: 15px;
+}
+.menu-full .item-menu li div{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+    align-items: center;
+}
+.menu-full .item-menu li div img{
+    width: 20px;
+}
+
+
+.close-menu{
+    left: -100%;
+    transition-duration: 500ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start responsive */
+@media screen and (max-width: 900px){
+
+}
