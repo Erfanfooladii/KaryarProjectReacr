@@ -54,8 +54,8 @@
 }
 .basket-full .cart-list .image-product{
     width: 200px;
-
 }
+.basket-full .cart-list .image-product img{width: 100%;}
 .basket-full .cart-list li{
     display: flex;
     gap: 5px;

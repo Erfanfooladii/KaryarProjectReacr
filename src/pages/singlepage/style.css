@@ -18,13 +18,13 @@
 .full-product{
     display: flex;   
 }
-.image-product{
+.full-product .image-product{
     position: sticky;
     height: 100%;
     top: 0;
     max-width: 350px;
 }
-.image-product img {
+.full-product .image-product img {
     width: 100%;
     position: sticky;  
 }

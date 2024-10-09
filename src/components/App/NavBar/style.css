@@ -71,19 +71,21 @@
 }
 .nav-bar .quantity{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     position: relative;
-    gap: 10px;
     color: white;
     text-decoration: none;
 }
-.nav-bar .quantity span {color: red;}
-.nav-bar .quantity img{
+.nav-bar .quantity span {
+    color: red;
     position: absolute;
+    top: 3px;
+}
+.nav-bar .quantity img{
+
     width: 50%;
-    top: 2px;
 }
 /* end navbar */
 /* start header */
@@ -138,6 +140,9 @@
     .nav-bar .quantity img {
         width: 40px;
         top: 5px;
+    }
+    .nav-bar .quantity span{
+        font-size: 11px;
     }
     /* end navbar */
 }
