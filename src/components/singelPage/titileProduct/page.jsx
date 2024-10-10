@@ -105,7 +105,7 @@ const TitleProduct=({mainData,cartData})=>{
             <a href="#">See more</a>
         </div>
         <div className="footer-title">
-            <a href="#"><span class="material-symbols-outlined">speaker_notes</span>Report an issue with this product or seller</a>
+            <a href="#"><span className="material-symbols-outlined">speaker_notes</span>Report an issue with this product or seller</a>
             <p>
                 <span>Note:</span> Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing.
             </p>
