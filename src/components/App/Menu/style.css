@@ -1,4 +1,4 @@
-.full-page{
+.full-page-menu{
     width: 100vw;
     height: 100vh;
     background-color: #00000082;
@@ -6,6 +6,10 @@
     position: fixed;
     top: 0;
     z-index: 5;
+    display: block;
+}
+.close-full-page{
+    display: none;
 }
 .menu-full{
     background-color: #fff;
@@ -14,6 +18,12 @@
     position: fixed;
     top: 0;
     z-index: 5;
+    left: 0%;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-menu{
+    left: -100%;
+    transition-duration: 500ms;
 }
 .menu-full .container-menu{
     overflow-y: scroll;
@@ -55,12 +65,6 @@
 }
 .menu-full .item-menu li div img{
     width: 20px;
-}
-
-
-.close-menu{
-    left: -100%;
-    transition-duration: 500ms;
 }
 
 

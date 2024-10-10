@@ -80,7 +80,7 @@ const NavBar = () => {
           <li>Sell</li>
         </ul>
       </header>
-      <Menu openHaneler={()=>setIsOpen(!isOpen)} open={isOpen}/>
+      <Menu openHaneler={()=>setIsOpen(!isOpen)} isopen={isOpen}/>
     </>
   );
 };
