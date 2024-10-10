@@ -32,4 +32,4 @@ Make sure you have the following software installed:
 
 To start the development server, run:
 ```bash
-npm start
+npm run dev
