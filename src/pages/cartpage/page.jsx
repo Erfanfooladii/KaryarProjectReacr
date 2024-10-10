@@ -1,14 +1,24 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useCartData from "../../store/cartstore";
-import db from "../../database/db.json";
 import "./style.css";
 import { Link } from "react-router-dom";
 import CartPrice from "../../components/cartPage/cartPrice/page";
 import CartList from "../../components/cartPage/cartList/page";
 import toast from "react-hot-toast";
+import api from "../../api/api";
 
 const CartPage = () => {
   const dataCart = useCartData((state) => state.cartData);
+  const [data,setData]=useState([])
+  const getDataApi=async ()=>{
+    try {
+      const dataApi=(await api.get("/datas")).data
+      setData(dataApi)
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  useEffect(()=>{getDataApi()},[])
   const removeAllDataCart = useCartData((state) => state.removeAllData);
   const updateDataCart = useCartData((state) => state.upData);
   const removeCartItem = useCartData((state) => state.removeData);
@@ -45,7 +55,7 @@ const CartPage = () => {
   };
 
   const mainProduct = (id) => {
-    return db.find((item) => item.id === id) || {};
+    return data.find((item) => item.id === id) || {};
   };
 
   const handeleChangeSelect = (e, item) => {
