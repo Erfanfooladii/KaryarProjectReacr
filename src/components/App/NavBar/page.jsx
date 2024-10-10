@@ -12,7 +12,7 @@ const NavBar = () => {
     (accumulator, currentValue) => accumulator + parseInt(currentValue.value),
     0
   );
-  const [isOpen,setIsOpen]=useState(false)
+  const [isOpen,setIsOpen]=useState(true)
   const handeleMenu=()=>{
     setIsOpen(!isOpen)
   }

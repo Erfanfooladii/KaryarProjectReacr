@@ -66,23 +66,10 @@
 .menu-full .item-menu li div img{
     width: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* start responsive */
 @media screen and (max-width: 900px){
-
+    .menu-full{width: 260px;}
+    .menu-full .item-menu .head-item{font-size: 14px;padding: 10px;}
+    .menu-full .item-menu li{padding: 10px;}
+    .menu-full .item-menu li p{font-size: 11px;}
 }
