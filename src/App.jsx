@@ -3,7 +3,6 @@ import { Outlet } from 'react-router-dom'
 import NavBar from './components/App/NavBar/page'
 import Footer from './components/App/Footer/page'
 import { Toaster } from 'react-hot-toast'
-import Menu from './components/App/Menu/page'
 
 function App() {
   return (
