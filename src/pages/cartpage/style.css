@@ -151,6 +151,9 @@
     .basket-full{
         flex-direction: column;
     }
+    .basket-full .cart-items {
+        width: 100%;
+    }
     .basket-full .cart-items .cart-list li{
         flex-direction: column;
         align-items: center;
