@@ -12,7 +12,6 @@ function App() {
         reverseOrder={false}
       />
       <NavBar/>
-      
       <section>
         <Outlet/>
       </section>

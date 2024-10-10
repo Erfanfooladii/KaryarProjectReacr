@@ -16,7 +16,7 @@ const PriceProduct = ({ mainData, cartData, clickHandele, selectHandele ,isBtn})
               <span>Wednesday, May 15</span>
             </p>
             <a href="#">
-              <span class="material-symbols-outlined">location_on</span>Deliver to
+              <span className="material-symbols-outlined">location_on</span>Deliver to
               Iran
             </a>
           </div>

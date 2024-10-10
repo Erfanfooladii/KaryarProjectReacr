@@ -47,7 +47,6 @@ const CartPage = () => {
   const mainProduct = (id) => {
     return db.find((item) => item.id === id) || {};
   };
-  console.log("main product", mainProduct);
 
   const handeleChangeSelect = (e, item) => {
     setIsBth(true);
@@ -78,6 +77,7 @@ const CartPage = () => {
             <ul className="cart-list">
               {dataCart.map((item) => (
                 <CartList
+                  key={item.id}
                   handeleChangeSelect={(e) => {
                     handeleChangeSelect(e, item);
                   }}
