@@ -145,4 +145,9 @@
         font-size: 11px;
     }
     /* end navbar */
+    /* start header */
+    .header ul{
+        overflow-x: scroll;
+    }
+    .header ul::-webkit-scrollbar{display: none;}
 }
