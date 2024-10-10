@@ -1,8 +1,35 @@
-# React + Vite
+# Karyar Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Karyar Project is a web application built using React. This project aims to provide a platform for managing tasks and projects efficiently.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+Make sure you have the following software installed:
+
+- Node.js
+- npm (Node Package Manager)
+
+### Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Erfanfooladii/KaryarProjectReacr.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd KaryarProjectReacr
+    ```
+3. Install the dependencies:
+    ```bash
+    npm install
+    ```
+
+### Usage
+
+To start the development server, run:
+```bash
+npm start
