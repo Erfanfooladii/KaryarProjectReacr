@@ -4,7 +4,11 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+@font-face {
+  font-family: 'Roboto';
+  src: url(./assets/fonts/Roboto-Medium.ttf) format('truetype');
+ }
 body{
-  font-family: sans-serif;
+  font-family: Roboto;
   background-color: #e3e6e6;
 }
