@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import CartPrice from "../../components/cartPage/cartPrice/page";
 import CartList from "../../components/cartPage/cartList/page";
 import toast from "react-hot-toast";
-import api from "../../api/api";
+import api from "../../configs/api/api";
 
 const CartPage = () => {
   const dataCart = useCartData((state) => state.cartData);

@@ -1,9 +1,8 @@
 import { createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
-import App from "../App";
-import MainPage from "../pages/mainpage/page";
-import SinglePage from "../pages/singlepage/page";
-import CartPage from "../pages/cartpage/page";
-import ContianerSinglePage from "../pages/singlepage/pages"; 
+import App from "../../App";
+import MainPage from "../../pages/mainpage/page";
+import SinglePage from "../../pages/singlepage/page";
+import CartPage from "../../pages/cartpage/page"
 
 export const router=createBrowserRouter(
     createRoutesFromElements(

@@ -5,7 +5,7 @@ import useEffectOnce from "../../utilits/useEffectOnce";
 import Slider from "../../components/mainPage/Slider/page";
 import "./style.css";
 import { FadeLoader } from "react-spinners";
-import api from "../../api/api";
+import api from "../../configs/api/api";
 const ItemProduct=lazy(()=> import("../../components/mainPage/ItemProduct/page"))
 const MainPage = () => {
     const [database, setDatabase] = useState([]);

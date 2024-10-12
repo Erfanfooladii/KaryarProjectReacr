@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 import ImageProduct from "../../components/singelPage/imageProduct/page";
 import TitleProduct from "../../components/singelPage/titileProduct/page";
 import PriceProduct from "../../components/singelPage/priceProduct/page";
-import api from "../../api/api";
+import api from "../../configs/api/api";
 
 const SinglePage = () => {
   const { id } = useParams();
