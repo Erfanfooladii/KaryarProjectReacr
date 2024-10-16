@@ -25,7 +25,7 @@ const SinglePage = () => {
     getApiData();
   }, []);
   const mainData = data.find((item) => item.id === id) || [];
-  const [selectValue, setSelectValue] = useState(mainData.value || "");
+  const [selectValue, setSelectValue] = useState(mainData.value || 1);
   const datas = useDatas((state) => state.data);
   const productData = datas[0]?.find((item) => item.id === id) || {};
   const addDataCart = useCartData((state) => state.addData);
@@ -36,7 +36,7 @@ const SinglePage = () => {
   const statusDataCart = prdouctCart.length > 0;
 
   const [btn, setBtn] = useState(statusDataCart ? "remove" : "add");
-
+  
   const handleAddDataCart = useCallback(() => {
     const updatedProduct = {
       ...mainData,
